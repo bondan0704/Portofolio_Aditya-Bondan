@@ -2,7 +2,6 @@
 
 TemplateMo 603 Nexaverse
 
-https://templatemo.com/tm-603-nexaverse
 
 */
 

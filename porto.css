@@ -1211,7 +1211,7 @@ body {
 /* Education Timeline */
 .education-timeline {
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 60px auto 0;
 	position: relative;
 	padding-left: 30px;
 }
@@ -1229,7 +1229,7 @@ body {
 
 .timeline-item {
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 .timeline-dot {

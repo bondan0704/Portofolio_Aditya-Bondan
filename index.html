@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Bondan Birawa Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="porto.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Initializing Experience...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header" id="mainHeader">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#10b981" />
+                            <stop offset="100%" style="stop-color:#a855f7" />
+                        </linearGradient>
+                    </defs>
+                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)"
+                        stroke-width="2" />
+                    <polygon points="50,20 80,37 80,63 50,80 20,63 20,37" fill="none" stroke="url(#logoGradient)"
+                        stroke-width="1.5" opacity="0.6" />
+                    <circle cx="50" cy="50" r="12" fill="url(#logoGradient)" opacity="0.3" />
+                    <circle cx="50" cy="50" r="6" fill="url(#logoGradient)" />
+                </svg>
+            </div>
+            <h1 class="brand-name">Aditya Bondan Birawa</h1>
+            <p class="tagline">Innovation Crafted with Precision</p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item initial-load" data-section="introduction">
+                <div class="menu-badge">IN</div>
+                <div class="menu-title">Introduction</div>
+            </div>
+            <div class="menu-item initial-load" data-section="services">
+                <div class="menu-badge">SE</div>
+                <div class="menu-title">Services</div>
+            </div>
+            <div class="menu-item initial-load" data-section="education">
+                <div class="menu-badge">ED</div>
+                <div class="menu-title">Education</div>
+            </div>
+            <div class="menu-item initial-load" data-section="experience">
+                <div class="menu-badge">EX</div>
+                <div class="menu-title">Experience</div>
+            </div>
+            <div class="menu-item initial-load" data-section="about">
+                <div class="menu-badge">AB</div>
+                <div class="menu-title">About</div>
+            </div>
+            <div class="menu-item initial-load" data-section="contact">
+                <div class="menu-badge">CO</div>
+                <div class="menu-title">Contact</div>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="contentArea">
+            <!-- Introduction Section -->
+            <div class="content-section" id="introduction">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10b981" />
+                                    <stop offset="100%" style="stop-color:#a855f7" />
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none"
+                                stroke="url(#smallLogoGrad)" stroke-width="3" />
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad)" />
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>ADITYA BONDAN BIRAWA</h3>
+                        <p>Available to Work</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <!-- Hero Banner -->
+                <div class="intro-hero">
+                    <div class="intro-hero-content">
+                        <span class="intro-badge">Est. 2026</span>
+                        <h1 class="intro-headline">Building Impactful<br><span>Digital Narratives</span> That Matter
+                        </h1>
+                        <p class="intro-subtext">Translating visionary concepts into robust technological solutions
+                            through
+                            advanced engineering and creative mastery.</p>
+                    </div>
+                    <div class="intro-hero-visual">
+                        <div class="intro-floating-card card-1">
+                            <span class="card-icon">➰</span>
+                            <span class="card-text">Flexible</span>
+                        </div>
+                        <div class="intro-floating-card card-2">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-text">Creative</span>
+                        </div>
+                        <div class="intro-floating-card card-3">
+                            <span class="card-icon">🔒</span>
+                            <span class="card-text">Secure & Reliable</span>
+                        </div>
+                        <div class="intro-orb"></div>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="intro-values">
+                    <div class="value-card">
+                        <div class="value-number">01</div>
+                        <h3>User-Focused Design</h3>
+                        <p>I design intuitive and user-centered interfaces by understanding real problems and
+                            translating them into meaningful digital experiences.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-number">02</div>
+                        <h3>Modern Frontend Development</h3>
+                        <p>I build responsive and scalable web applications using modern technologies with attention to
+                            performance and clean code structure.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-number">03</div>
+                        <h3>Creative Visual Approach</h3>
+                        <p>I combine visual design and usability principles to create interfaces that are both
+                            aesthetically pleasing and functional.</p>
+                    </div>
+                </div>
+
+
+                <!-- Tech Stack Preview -->
+                <div class="intro-tech">
+                    <p class="tech-label">Core Technologies</p>
+                    <div class="tech-marquee">
+                        <div class="tech-track">
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">GitHub</span>
+                            <span class="tech-item">Figma</span>
+                            <span class="tech-item">Adobe Illustrator</span>
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">GitHub</span>
+                            <span class="tech-item">Figma</span>
+                            <span class="tech-item">Adobe Illustrator</span>
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">GitHub</span>
+                            <span class="tech-item">Figma</span>
+                            <span class="tech-item">Adobe Illustrator</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="content-section" id="services">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10b981" />
+                                    <stop offset="100%" style="stop-color:#a855f7" />
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none"
+                                stroke="url(#smallLogoGrad2)" stroke-width="3" />
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad2)" />
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>ADITYA BONDAN BIRAWA</h3>
+                        <p>Technological Mastery</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Areas of Expertise</h2>
+                    <p class="section-subtitle">Holistic engineering for a tech-driven world</p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active">Core
+                            Capabilities</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="core capabilities">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/Web.png" alt="Web Applications">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Web Applications</h4>
+                                        <p>Responsive, scalable web apps built with modern frameworks like React, Vue,
+                                            and Next.js for optimal performance.</p>
+                                    </div>
+                                </div>
+
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/project2.png" alt="Digital Visual Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Digital Visual Design</h4>
+                                        <p>Creating impactful digital visuals including social media graphics,
+                                            promotional materials,
+                                            and interface elements with strong attention to clarity, consistency, and
+                                            visual storytelling.</p>
+                                    </div>
+                                </div>
+
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/logo.jpg" alt="Logo & Identity Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Logo & Identity Design</h4>
+                                        <p>Designing distinctive logos and cohesive visual \
+                                            identities that communicate brand values clearly and leave a memorable
+                                            impression.</p>
+                                    </div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/project3.png" alt="UX/UI Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>UX/UI Design</h4>
+                                        <p>Beautiful, intuitive interfaces that delight users and drive engagement
+                                            through research-backed design principles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="content-section" id="education">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10b981" />
+                                    <stop offset="100%" style="stop-color:#a855f7" />
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none"
+                                stroke="url(#smallLogoGrad3)" stroke-width="3" />
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad3)" />
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>ADITYA BONDAN BIRAWA</h3>
+                        <p>Education</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Educational Background</h2>
+                    <p class="section-subtitle">My academic journey and qualifications</p>
+                </div>
+
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h4>Bachelor of Computer Science</h4>
+                            <h5>Universitas Teknologi Digital Indonesia</h5>
+                            <p> Focused on Information Systems, Web Development, UI/UX Design,
+                                and System Analysis. Actively involved in frontend development
+                                and digital product design projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content glass-card">
+                            <h4>Independent Study – ReactJS</h4>
+                            <h5>Hacktiv8</h5>
+                            <p>Intensive training in modern frontend development using ReactJS,
+                                building responsive and interactive web applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="content-section" id="experience">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10b981" />
+                                    <stop offset="100%" style="stop-color:#a855f7" />
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none"
+                                stroke="url(#smallLogoGrad4)" stroke-width="3" />
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad4)" />
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>ADITYA BONDAN BIRAWA</h3>
+                        <p>Technological Mastery</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-subtitle">My career journey and professional milestones</p>
+                </div>
+
+                <div class="experience-timeline education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">March 2025 - July 2025</div>
+                        <div class="timeline-content glass-card">
+                            <h4>UI/UX Designer</h4>
+                            <h5>Internship at Seven.INC (On Site)</h5>
+                            <p> Designed user-centered interfaces, created wireframes
+                                and prototypes, and improved usability for digital products.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">March 2025 - July 2025</div>
+                        <div class="timeline-content glass-card">
+                            <h4>Graphic Design Intern</h4>
+                            <h5>Internship at Learning With Us (Remote)</h5>
+                            <p> Created marketing visuals, posters, and digital content
+                                using Canva and Adobe Illustrator.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="content-section" id="about">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10b981" />
+                                    <stop offset="100%" style="stop-color:#a855f7" />
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none"
+                                stroke="url(#smallLogoGrad5)" stroke-width="3" />
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad5)" />
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>ADITYA BONDAN BIRAWA</h3>
+                        <p>Technological Mastery</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">The Foundation</h2>
+                    <p class="section-subtitle">Journey, objective, and core principles</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Advancing Technological Horizons</h3>
+                        <p>I am a Computer Science student at <strong>Universitas Teknologi Digital Indonesia</strong>,
+                            specializing in <strong>Information Systems</strong>. My journey is driven by a passion for
+                            blending technical precision with creative problem-solving.</p>
+                        <p>With a strong foundation in <strong>Web Development</strong> and <strong>UI/UX
+                                Design</strong>, I've honed my skills through intensive studies, including an
+                            independent study in <strong>ReactJS</strong> at <strong>Hacktiv8</strong>. My professional
+                            experience includes impactful internships at <strong>Seven.INC</strong> as a UI/UX Designer
+                            and <strong>Learning With Us</strong> as a Graphic Design Intern.</p>
+                        <p>I am committed to engineering digital solutions that are not only functional but also
+                            intuitive and visually compelling. I believe in the power of design-centric development to
+                            create meaningful technological interactions.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/Profil.png" alt="Our Team">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="content-section" id="contact">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10b981" />
+                                    <stop offset="100%" style="stop-color:#a855f7" />
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none"
+                                stroke="url(#smallLogoGrad6)" stroke-width="3" />
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad6)" />
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>ADITYA BONDAN BIRAWA</h3>
+                        <p>Technological Mastery</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Let's create something amazing together</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contactSubject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="submit-btn" onclick="sendEmail()">Send Message</button>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Matraman, East Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>adityabondan.ab@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+62 857-8487-3457</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="mainFooter">
+            <p>© 2026 Aditya Bondan Birawa.</p>
+        </footer>
+    </div>
+    <script src="porto.js"></script>
+</body>
+
+</html>

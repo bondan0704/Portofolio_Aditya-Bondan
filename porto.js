@@ -1,9 +1,6 @@
 /* JavaScript Document
-
-TemplateMo 603 Nexaverse
-
-
-*/
+ * Aditya Bondan Birawa Portfolio
+ */
 
 // Loading Screen
 window.addEventListener('load', () => {
